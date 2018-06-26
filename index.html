@@ -25,9 +25,11 @@
     </div>
 
     <table class="table1">
-      <col class="col-w50">
-      <col>
-      <col class="col-w50">
+      <colgroup>
+        <col class="col-w50">
+        <col>
+        <col class="col-w50">
+      </colgroup>
       <thead>
         <tr>
           <th>headlabel</th>
@@ -35,13 +37,6 @@
           <th>headlabel</th>
         </tr>
       </thead>
-      <tfoot>
-        <tr>
-          <th>footlabel</th>
-          <th>footlabel</th>
-          <th>footlabel</th>
-        </tr>
-      </tfoot>
       <tbody>
         <tr>
           <th>label</th>
@@ -59,7 +54,36 @@
           <td>content</td>
         </tr>
       </tbody>
+      <tfoot>
+        <tr>
+          <th>footlabel</th>
+          <th>footlabel</th>
+          <th>footlabel</th>
+        </tr>
+      </tfoot>
     </table>
+
+    <div class="card-group">
+      <div class="card-group-item">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#">label</a>
+          </li>
+          <li class="item"><a href="#">label</a></li>
+      <li class="item"><a href="#">label</a></li>
+    </ul>
+      </div>
+      <div class="item">
+      </div>
+    </div>
+
+    <ul class="list-group">
+      <li class="item">
+        <a href="#">label</a>
+      </li>
+      <li class="item"><a href="#">label</a></li>
+      <li class="item"><a href="#">label</a></li>
+    </ul>
 
     <div class="bar">
       <hr />
@@ -119,6 +143,6 @@ function showTime() {
 function $(id) { return document.getElementById(id); }
       </script></div>
 
-      <footer align="right"><p>&copy;obenkyou</p></footer>
+      <footer><p>&copy;obenkyou</p></footer>
     </body>
   </html>

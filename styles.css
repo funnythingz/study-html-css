@@ -53,6 +53,12 @@ a:hover {
   border-radius: 0 8px 8px 0;
 }
 
+.list-group {
+}
+
+.list-group-item {
+}
+
 .table1 {
   border: solid 1px #333;
   width: 50%;
@@ -61,7 +67,7 @@ a:hover {
   background-color: #e4e5e6;
 }
 .col-w50 {
-  width: 50%;
+  width: 50px;
 }
 .table1 th {
   border: solid 1px #555;
