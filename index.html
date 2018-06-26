@@ -6,91 +6,119 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <center>
-      <header><p>
+
+    <header class="header">
+      <h1 class="header__heading">
         HTML/CSSのお勉強
-      </p></header>
-    </center>
+      </h1>
+    </header>
 
-    <a href="index.html" style="text-decoration:none;">&lt; Back</a><br />
+    <div class="spacing">
+      <a href="index.html" class="to-back">Back</a>
+    </div>
 
-    <center>
-      <a href="index.html" class="button_left">あのよ</a>
-      <a href="index.html" class="button_right">このよ</a>
-    </center>
+    <div class="spacing">
+      <div class="kamaboko-menu">
+        <a class="kamaboko-menu-item is-active" href="index.html">あのよ</a><!--
+        --><a class="kamaboko-menu-item" href="index.html">このよ</a>
+      </div>
+    </div>
+
+    <table class="table1">
+      <col class="col-w50">
+      <col>
+      <col class="col-w50">
+      <thead>
+        <tr>
+          <th>headlabel</th>
+          <th>headlabel</th>
+          <th>headlabel</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>footlabel</th>
+          <th>footlabel</th>
+          <th>footlabel</th>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <th>label</th>
+          <th>label</th>
+          <th>label</th>
+        </tr>
+        <tr>
+          <td>content</td>
+          <td>content</td>
+          <td>content</td>
+        </tr>
+        <tr>
+          <td>content</td>
+          <td>content</td>
+          <td>content</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="bar">
+      <hr />
+      label <hr />
+      label <hr />
+      label <hr />
+    </div>
+
+    <div class="box2">
+      label <div class="switch">
+        <label class="switch__label">
+          <input type="checkbox" class="switch__input"/>
+          <span class="switch__content"></span>
+          <span class="switch__circle"></span>
+        </label>
+      </div><hr class="sen"/>
+      label <div class="switch">
+        <label class="switch__label">
+          <input type="checkbox" class="switch__input"/>
+          <span class="switch__content"></span>
+          <span class="switch__circle"></span>
+        </label>
+      </div><hr class="sen"/>
+      label<div class="switch">
+        <label class="switch__label">
+          <input type="checkbox" class="switch__input"/>
+          <span class="switch__content"></span>
+          <span class="switch__circle"></span>
+        </label>
+      </div>
+
+    </div>
 
 
-    <p>
-    <table class="table1" border=1>
-      <tr>
-        <th>label</th>
-      </tr>
-      <tr>
-        <th>label</th>
-      </tr>
-      <tr>
-        <th>label</th>
-      </tr>
-    </table></p>
 
-  <div class="bar">
-  <hr />
-  label <hr />
-  label <hr />
-  label <hr />
-  </div>
-
-  <div class="box2">
-  label <div class="switch">
-          <label class="switch__label">
-            <input type="checkbox" class="switch__input"/>
-            <span class="switch__content"></span>
-            <span class="switch__circle"></span>
-          </label>
-        </div><hr class="sen"/>
-  label <div class="switch">
-          <label class="switch__label">
-            <input type="checkbox" class="switch__input"/>
-            <span class="switch__content"></span>
-            <span class="switch__circle"></span>
-          </label>
-        </div><hr class="sen"/>
-  label<div class="switch">
-          <label class="switch__label">
-            <input type="checkbox" class="switch__input"/>
-            <span class="switch__content"></span>
-            <span class="switch__circle"></span>
-          </label>
-        </div>
-
-  </div>
-
-
-
-  <div class="bar">
-  <hr />
-  <div class="square1"></div>&emsp;label
-  <hr />
-  <div class="square2"></div>&emsp;label <hr />
-  <div class="square3"></div>&emsp;label <hr />
-  </div>
-  <div class="box3"><div id="disp" style="font-size:30px; text-align:left;"></div>
-    <script>
+    <div class="bar">
+      <hr />
+      <div class="square1"></div>&emsp;label
+      <hr />
+      <div class="square2"></div>&emsp;label <hr />
+      <div class="square3"></div>&emsp;label <hr />
+    </div>
+    <div class="box3"><div id="disp" style="font-size:30px; text-align:left;"></div>
+      <script>
         setInterval(showTime, 500);
-        function showTime() {
-            var tv = new Date();
-            var youbi = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
-            var month = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
-            var you = tv.getDay();
-            var mon = tv.getMonth();
-            $("disp").innerHTML  =
-                ("0" + tv.getHours()).slice(-2) + ":" +
-                ("0" + tv.getMinutes()).slice(-2) + "<br>" + youbi[you].small() + ", " + month[mon].small() + " " + tv.getDate();
+function showTime() {
+  var tv = new Date();
+  var youbi = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+  var month = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+  var you = tv.getDay();
+  var mon = tv.getMonth();
+  $("disp").innerHTML  =
+    ("0" + tv.getHours()).slice(-2) + ":" +
+    ("0" + tv.getMinutes()).slice(-2) + "<br>" + youbi[you].small() + ", " + month[mon].small() + " " + tv.getDate();
 
-        }
-        function $(id) { return document.getElementById(id); }
-    </script></div>
+}
+function $(id) { return document.getElementById(id); }
+      </script></div>
 
-  <footer align="right"><p>&copy;obenkyou</p></footer>
-  </body>
-</html>
+      <footer align="right"><p>&copy;obenkyou</p></footer>
+    </body>
+  </html>
